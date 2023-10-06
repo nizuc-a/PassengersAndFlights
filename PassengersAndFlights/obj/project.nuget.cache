@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "yns0ZY53YydFBAQ6JEGC/5l/RrDh69/OqbrdsdNMlQJHf8rLdbiwYi9h5/IrDrPGNVUEoPDlQakMevVWo3EoSQ==",
+  "success": true,
+  "projectFilePath": "D:\\C# projects\\PassengersAndFlights\\PassengersAndFlights\\PassengersAndFlights.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Артем\\.nuget\\packages\\dynamicdata\\8.0.2\\dynamicdata.8.0.2.nupkg.sha512",
+    "C:\\Users\\Артем\\.nuget\\packages\\fody\\6.8.0\\fody.6.8.0.nupkg.sha512",
+    "C:\\Users\\Артем\\.nuget\\packages\\reactiveui\\19.5.1\\reactiveui.19.5.1.nupkg.sha512",
+    "C:\\Users\\Артем\\.nuget\\packages\\reactiveui.fody\\19.5.1\\reactiveui.fody.19.5.1.nupkg.sha512",
+    "C:\\Users\\Артем\\.nuget\\packages\\splat\\14.7.1\\splat.14.7.1.nupkg.sha512",
+    "C:\\Users\\Артем\\.nuget\\packages\\system.reactive\\6.0.0\\system.reactive.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
