@@ -14,7 +14,7 @@
 		<Setter Property="Cursor" Value="IBeam" />
 		<Setter Property="FontWeight" Value="400" />
 		<Setter Property="FontFamily" Value="Poppins" />
-		<Setter Property="Foreground" Value="{StaticResource BorderColor}" />
+		<Setter Property="Foreground" Value="#1a1818" />
 		<Setter Property="ScrollViewer.PanningMode" Value="VerticalFirst" />
 		<Setter Property="VerticalContentAlignment" Value="Center" />
 		<Setter Property="AllowDrop" Value="True" />

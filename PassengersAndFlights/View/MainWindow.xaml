@@ -9,7 +9,7 @@
         >
 
 	<Window.DataContext>
-		<vm:FlightsVM />
+		<vm:PassengerVM />
 	</Window.DataContext>
 	<Grid>
 		<Grid.RowDefinitions>
@@ -21,7 +21,9 @@
 			<Separator Opacity="0" Width="5" />
 			<Button Content="Save" />
 			<Separator Opacity="0" Width="5" />
-			<Button Content="Add person" />
+			<Button Content="Добавить пассажира" 
+			        Command="{Binding AddPassengerCommand}"
+			        Style="{DynamicResource CustomButtonStyle}"/>
 			<Separator Opacity="0" Width="5" />
 			<Button Content="Add flight" />
 			<Separator Opacity="0" Width="5" />

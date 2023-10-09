@@ -1,19 +1,23 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using System.Windows;
 using System.Windows.Input;
+using System.Windows.Threading;
 using DynamicData.Binding;
 using PassengersAndFlights.Model;
+using PassengersAndFlights.View;
 using ReactiveUI;
 
 namespace PassengersAndFlights.ViewModel;
 
-public class FlightsVM
+public class PassengerVM
 {
-    public FlightsVM()
+    public PassengerVM()
     {
-        Flights.Add(new Flight(DateTime.Parse("10/18/2023 07:22:16"), "C75348"));
-        Flights.Add(new Flight(DateTime.Parse("10/15/2023 08:34:00"), "UT381"));
-        Flights.Add(new Flight(DateTime.Parse("12/01/2023 12:12:12"), "UT249"));
+        Flights.Add(new Flight(DateTime.Now, "C75348"));
+        Flights.Add(new Flight(DateTime.Now, "UT381"));
+        Flights.Add(new Flight(DateTime.Now, "UT249"));
+        AddPassengerCommand = new RelayCommand(x => new AddNewPassengerWindow().ShowDialog());
     }
 
     #region Fields
@@ -27,21 +31,9 @@ public class FlightsVM
     #region Commands
 
     public ICommand AddPassengerCommand { get; }
+
     public ICommand ReadFileCommand => ReactiveCommand.Create(() =>  DataManager.ReadPassengerFile());
     public ICommand WriteFileCommand => ReactiveCommand.Create(() => DataManager.WritePassengerFile());
-
-    #endregion
-
-    #region Command methods
-
-    public void AddPassenger()
-    {
-        
-    }
-
-    #endregion
-
-    #region Methods
 
     #endregion
 }

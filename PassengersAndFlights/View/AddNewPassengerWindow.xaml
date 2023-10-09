@@ -31,7 +31,7 @@
 		         Style="{DynamicResource CustomTextBox}"
 		         Text="{Binding Patronymic}" />
 
-		<Separator Background="Transparent" Height="20"></Separator>
+		<Separator Background="Transparent" Height="10"></Separator>
 		<Button Content="Сохранить пассажира"
 		        Command="{Binding AddPassengerCommand}" 
 		        Style="{DynamicResource CustomButtonStyle}"/>

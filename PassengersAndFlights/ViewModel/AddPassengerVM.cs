@@ -1,7 +1,5 @@
 ﻿using System.Windows.Input;
 using PassengersAndFlights.Model;
-using ReactiveUI;
-using ReactiveUI.Fody.Helpers;
 
 namespace PassengersAndFlights.ViewModel;
 
@@ -13,8 +11,8 @@ public class AddPassengerVM
 
     public AddPassengerVM()
     {
-        AddPassengerCommand = ReactiveCommand.Create(
-            () => DataManager.AddNewPassenger(new Passenger(FirstName, LastName, Patronymic))
+        AddPassengerCommand = new RelayCommand(
+            x => DataManager.AddNewPassenger(new Passenger(FirstName, LastName, Patronymic))
         );
     }
 
