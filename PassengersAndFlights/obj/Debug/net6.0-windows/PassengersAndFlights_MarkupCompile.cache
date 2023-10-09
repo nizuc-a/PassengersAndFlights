@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\C# projects\PassengersAndFlights\PassengersAndFlights\App.xaml
-1-487866684
+4-458137494
 
-7245734603
+9-18712801
 199-761735052
-View\MainWindow.xaml;
+Model\Styles\Button.xaml;Model\Styles\TextBox.xaml;View\AddNewPassengerWindow.xaml;View\MainWindow.xaml;
 
 True
 

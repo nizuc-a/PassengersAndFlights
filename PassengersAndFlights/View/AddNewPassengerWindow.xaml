@@ -1,0 +1,40 @@
+﻿<Window x:Class="PassengersAndFlights.View.AddNewPassengerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:PassengersAndFlights.ViewModel"
+
+        mc:Ignorable="d"
+        Title="Новый пассажир" Height="300" Width="300">
+	<Window.DataContext>
+		<local:AddPassengerVM />
+	</Window.DataContext>
+	<StackPanel Margin="10">
+		<TextBlock Text="Имя:" FontSize="14" />
+		<Separator Background="Transparent" Height="5"></Separator>
+		<TextBox Tag="Имя"
+		         Style="{DynamicResource CustomTextBox}"
+		         Text="{Binding FirstName}" />
+
+		<Separator Background="Transparent" Height="5"></Separator>
+		<TextBlock Text="Фамилия:" FontSize="14" />
+		<Separator Background="Transparent" Height="5"></Separator>
+		<TextBox Tag="Фамилия"
+		         Style="{DynamicResource CustomTextBox}"
+		         Text="{Binding LastName}" />
+
+		<Separator Background="Transparent" Height="5"></Separator>
+		<TextBlock Text="Отчество:" FontSize="14" />
+		<Separator Background="Transparent" Height="5"></Separator>
+		<TextBox Tag="Отчество"
+		         Style="{DynamicResource CustomTextBox}"
+		         Text="{Binding Patronymic}" />
+
+		<Separator Background="Transparent" Height="20"></Separator>
+		<Button Content="Сохранить пассажира"
+		        Command="{Binding AddPassengerCommand}" 
+		        Style="{DynamicResource CustomButtonStyle}"/>
+
+	</StackPanel>
+</Window>

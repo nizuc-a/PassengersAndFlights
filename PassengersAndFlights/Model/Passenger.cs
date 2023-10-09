@@ -1,4 +1,7 @@
-﻿namespace PassengersAndFlights.Model;
+﻿using System;
+using System.Security.AccessControl;
+
+namespace PassengersAndFlights.Model;
 
 public class Passenger
 {
@@ -12,6 +15,5 @@ public class Passenger
     public string FirstName { get; set; }
     public string LastName { get; set; }
     public string Patronymic { get; set; }
-
-    public override string ToString() => $"{FirstName} {LastName} {Patronymic}";
+    public Flight Flight { get; set; }
 }
