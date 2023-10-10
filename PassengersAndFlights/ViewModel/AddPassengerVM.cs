@@ -33,7 +33,7 @@ public class AddPassengerVM
         }
     }
 
-    public DateTime DepartureTime { get; set; }
+    public DateTime DepartureTime { get; set; } = DateTime.Now;
 
     private void UpdateDate()
     {

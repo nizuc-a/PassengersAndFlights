@@ -11,14 +11,14 @@
 		<local:AddPassengerVM />
 	</Window.DataContext>
 	<StackPanel Margin="10">
-		<TextBox Tag="Имя"
-		         Style="{DynamicResource CustomTextBox}"
-		         Text="{Binding FirstName}" />
-		<Separator Background="Transparent" Height="5" />
-
 		<TextBox Tag="Фамилия"
 		         Style="{DynamicResource CustomTextBox}"
 		         Text="{Binding LastName}" />
+		<Separator Background="Transparent" Height="5" />
+		
+		<TextBox Tag="Имя"
+		         Style="{DynamicResource CustomTextBox}"
+		         Text="{Binding FirstName}" />
 		<Separator Background="Transparent" Height="5" />
 
 		<TextBox Tag="Отчество"

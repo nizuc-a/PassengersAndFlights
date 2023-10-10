@@ -7,14 +7,23 @@ namespace PassengersAndFlights.Model;
 public class DataManager
 {
     public static ObservableCollection<Passenger>? Collection { get; set; } = new ObservableCollection<Passenger>();
-    
+
     public static void ReadPassengerFile(string path = "jsonFlights.txt")
     {
         if (File.Exists(path))
-            Collection = JsonSerializer.Deserialize<ObservableCollection<Passenger>>(path);
+        {
+            Collection.Clear();
+            var jsonText = File.ReadAllText(path);
+            var result = JsonSerializer.Deserialize<ObservableCollection<Passenger>>(jsonText);
+            
+            foreach (var item in result)
+            {
+                Collection.Add(item);
+            }
+        }
     }
 
-    public static void WritePassengerFile(string path = "jsonFlights.txt")
+    public static void WritePassengerFile(string path = $"jsonFlights.txt")
     {
         var options = new JsonSerializerOptions
         {

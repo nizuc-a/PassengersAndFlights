@@ -15,11 +15,16 @@ public class PassengerVM
     public PassengerVM()
     {
         AddPassengerCommand = new RelayCommand(x => new AddNewPassengerWindow().ShowDialog());
+        ReadFileCommand =  new RelayCommand(x =>
+        {
+            DataManager.ReadPassengerFile();
+            //Passengers = 
+        });
     }
 
     #region Fields
 
-    public ObservableCollection<Passenger>? Passengers { get; } = DataManager.Collection;
+    public ObservableCollection<Passenger>? Passengers { get; private set; } = DataManager.Collection;
 
     #endregion
 
@@ -27,7 +32,7 @@ public class PassengerVM
 
     public ICommand AddPassengerCommand { get; }
 
-    public ICommand ReadFileCommand { get; } = new RelayCommand(x => DataManager.ReadPassengerFile());
+    public ICommand ReadFileCommand { get; } 
     public ICommand WriteFileCommand { get; } = new RelayCommand(x => DataManager.WritePassengerFile());
 
     #endregion
