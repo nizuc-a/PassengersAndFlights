@@ -24,8 +24,6 @@ D:\C# projects\PassengersAndFlights\PassengersAndFlights\bin\Debug\net6.0-window
 D:\C# projects\PassengersAndFlights\PassengersAndFlights\bin\Debug\net6.0-windows\ReactiveUI.Fody.Helpers.dll
 D:\C# projects\PassengersAndFlights\PassengersAndFlights\bin\Debug\net6.0-windows\Splat.dll
 D:\C# projects\PassengersAndFlights\PassengersAndFlights\bin\Debug\net6.0-windows\System.Reactive.dll
-D:\C# projects\PassengersAndFlights\PassengersAndFlights\obj\Debug\net6.0-windows\PassengersAndFlights.csproj.Fody.CopyLocal.cache
-D:\C# projects\PassengersAndFlights\PassengersAndFlights\obj\Debug\net6.0-windows\PassengersAndFlights.csproj.Fody.RuntimeCopyLocal.cache
 D:\C# projects\PassengersAndFlights\PassengersAndFlights\obj\Debug\net6.0-windows\PassengersAndFlights.csproj.CopyComplete
 D:\C# projects\PassengersAndFlights\PassengersAndFlights\obj\Debug\net6.0-windows\Model\Styles\TextBox.baml
 D:\C# projects\PassengersAndFlights\PassengersAndFlights\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
@@ -33,3 +31,5 @@ D:\C# projects\PassengersAndFlights\PassengersAndFlights\obj\Debug\net6.0-window
 D:\C# projects\PassengersAndFlights\PassengersAndFlights\obj\Debug\net6.0-windows\Model\Styles\Button.baml
 D:\C# projects\PassengersAndFlights\PassengersAndFlights\obj\Debug\net6.0-windows\View\AddNewPassengerWindow.g.cs
 D:\C# projects\PassengersAndFlights\PassengersAndFlights\obj\Debug\net6.0-windows\View\AddNewPassengerWindow.baml
+D:\C# projects\PassengersAndFlights\PassengersAndFlights\obj\Debug\net6.0-windows\PassengersAndFlights.csproj.Fody.CopyLocal.cache
+D:\C# projects\PassengersAndFlights\PassengersAndFlights\obj\Debug\net6.0-windows\PassengersAndFlights.csproj.Fody.RuntimeCopyLocal.cache

@@ -16,22 +16,25 @@
 			<RowDefinition Height="Auto" />
 			<RowDefinition Height="*" />
 		</Grid.RowDefinitions>
-		<StackPanel Grid.Row="0" Margin="5" Orientation="Horizontal">
-			<Button Content="Open" />
+		<StackPanel Grid.Row="0" Margin="10 5 10 5"  Orientation="Horizontal">
+			<Button Content="Загрузить" 
+			        Style="{DynamicResource CustomButtonStyle}"
+			        Command="{Binding ReadFileCommand}"/>
 			<Separator Opacity="0" Width="5" />
-			<Button Content="Save" />
+			<Button Content="Сохранить" 
+			        Style="{DynamicResource CustomButtonStyle}"
+			        Command="{Binding WriteFileCommand}"/>
 			<Separator Opacity="0" Width="5" />
 			<Button Content="Добавить пассажира" 
 			        Command="{Binding AddPassengerCommand}"
 			        Style="{DynamicResource CustomButtonStyle}"/>
-			<Separator Opacity="0" Width="5" />
-			<Button Content="Add flight" />
-			<Separator Opacity="0" Width="5" />
 		</StackPanel>
 		
 		<DataGrid Grid.Row="1"
-		          ItemsSource="{Binding Passengers}"
-		          Margin="10">
+		          ItemsSource="{Binding Path=Passengers}"
+		          Margin="10"
+		          AutoGenerateColumns="False"
+		          CanUserDeleteRows="True">
 			<DataGrid.Columns>
 				<DataGridTextColumn Header="Имя" 
 				                    Binding="{Binding FirstName}"
@@ -42,12 +45,13 @@
 				<DataGridTextColumn Header="Отчество" 
 				                    Binding="{Binding Patronymic}"
 				                    MinWidth="100"/>
-				<DataGridComboBoxColumn Header="Номер рейса и дата вылета" 
-				                    TextBinding="{Binding Flight}"
+				<DataGridTextColumn Header="Дата вылета" 
+				                    Binding="{Binding DepartureTime}"
+				                    Width="*"/>
+				<DataGridTextColumn Header="Номер рейса" 
+				                    Binding="{Binding FlightNumber}"
 				                    Width="*"/>
 			</DataGrid.Columns>
 		</DataGrid>
-		
-
 	</Grid>
 </Window>

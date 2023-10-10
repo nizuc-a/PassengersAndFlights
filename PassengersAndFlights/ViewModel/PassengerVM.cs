@@ -14,9 +14,6 @@ public class PassengerVM
 {
     public PassengerVM()
     {
-        Flights.Add(new Flight(DateTime.Now, "C75348"));
-        Flights.Add(new Flight(DateTime.Now, "UT381"));
-        Flights.Add(new Flight(DateTime.Now, "UT249"));
         AddPassengerCommand = new RelayCommand(x => new AddNewPassengerWindow().ShowDialog());
     }
 
@@ -24,16 +21,14 @@ public class PassengerVM
 
     public ObservableCollection<Passenger>? Passengers { get; } = DataManager.Collection;
 
-    public ObservableCollection<Flight> Flights { get; set; } = new ObservableCollection<Flight>();        
-
     #endregion
 
     #region Commands
 
     public ICommand AddPassengerCommand { get; }
 
-    public ICommand ReadFileCommand => ReactiveCommand.Create(() =>  DataManager.ReadPassengerFile());
-    public ICommand WriteFileCommand => ReactiveCommand.Create(() => DataManager.WritePassengerFile());
+    public ICommand ReadFileCommand { get; } = new RelayCommand(x => DataManager.ReadPassengerFile());
+    public ICommand WriteFileCommand { get; } = new RelayCommand(x => DataManager.WritePassengerFile());
 
     #endregion
 }

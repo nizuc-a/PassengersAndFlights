@@ -4,37 +4,51 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:local="clr-namespace:PassengersAndFlights.ViewModel"
-
         mc:Ignorable="d"
-        Title="Новый пассажир" Height="300" Width="300">
+        ResizeMode="NoResize"
+        Title="Новый пассажир" Height="340" Width="300">
 	<Window.DataContext>
 		<local:AddPassengerVM />
 	</Window.DataContext>
 	<StackPanel Margin="10">
-		<TextBlock Text="Имя:" FontSize="14" />
-		<Separator Background="Transparent" Height="5"></Separator>
 		<TextBox Tag="Имя"
 		         Style="{DynamicResource CustomTextBox}"
 		         Text="{Binding FirstName}" />
+		<Separator Background="Transparent" Height="5" />
 
-		<Separator Background="Transparent" Height="5"></Separator>
-		<TextBlock Text="Фамилия:" FontSize="14" />
-		<Separator Background="Transparent" Height="5"></Separator>
 		<TextBox Tag="Фамилия"
 		         Style="{DynamicResource CustomTextBox}"
 		         Text="{Binding LastName}" />
+		<Separator Background="Transparent" Height="5" />
 
-		<Separator Background="Transparent" Height="5"></Separator>
-		<TextBlock Text="Отчество:" FontSize="14" />
-		<Separator Background="Transparent" Height="5"></Separator>
 		<TextBox Tag="Отчество"
 		         Style="{DynamicResource CustomTextBox}"
 		         Text="{Binding Patronymic}" />
+		<Separator Background="Transparent" Height="10" />
 
-		<Separator Background="Transparent" Height="10"></Separator>
+		<TextBox Tag="Номер рейса"
+		         Style="{DynamicResource CustomTextBox}"
+		         Text="{Binding FlightNumber}" />
+		<Separator Background="Transparent" Height="10" />
+
+		<DatePicker SelectedDate="{Binding DepartureTime}"/>
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center"
+		            Margin="10">
+			<TextBlock VerticalAlignment="Center" FontSize="14" Text="Часы:"
+			           Margin="0 0 5 0" />
+			<TextBox Text="{Binding Hour, StringFormat={}{0:d2}}"
+			         FontSize="14"
+			         Style="{DynamicResource CustomTextBox}" />
+			<TextBlock VerticalAlignment="Center" FontSize="14" Text="Минуты:"
+			           Margin="5 0 5 0" />
+			<TextBox Text="{Binding Minute, StringFormat={}{0:d2}}"
+			         FontSize="14"
+			         Style="{DynamicResource CustomTextBox}" />
+		</StackPanel>
+		
 		<Button Content="Сохранить пассажира"
-		        Command="{Binding AddPassengerCommand}" 
-		        Style="{DynamicResource CustomButtonStyle}"/>
+		        Command="{Binding AddPassengerCommand}"
+		        Style="{DynamicResource CustomButtonStyle}" />
 
 	</StackPanel>
 </Window>
