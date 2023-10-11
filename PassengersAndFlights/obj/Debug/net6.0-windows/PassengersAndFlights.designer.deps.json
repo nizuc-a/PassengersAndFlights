@@ -1,0 +1,107 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "DynamicData/8.0.2": {
+        "dependencies": {
+          "System.Reactive": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/DynamicData.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.2.45848"
+          }
+        }
+      },
+      "Fody/6.8.0": {},
+      "ReactiveUI/19.5.1": {
+        "dependencies": {
+          "DynamicData": "8.0.2",
+          "Splat": "14.7.1"
+        },
+        "runtime": {
+          "lib/net6.0/ReactiveUI.dll": {
+            "assemblyVersion": "19.5.0.0",
+            "fileVersion": "19.5.1.4944"
+          }
+        }
+      },
+      "ReactiveUI.Fody/19.5.1": {
+        "dependencies": {
+          "Fody": "6.8.0",
+          "ReactiveUI": "19.5.1"
+        },
+        "runtime": {
+          "lib/net6.0/ReactiveUI.Fody.Helpers.dll": {
+            "assemblyVersion": "19.5.0.0",
+            "fileVersion": "19.5.1.4944"
+          }
+        }
+      },
+      "Splat/14.7.1": {
+        "runtime": {
+          "lib/net6.0/Splat.dll": {
+            "assemblyVersion": "14.7.0.0",
+            "fileVersion": "14.7.1.58184"
+          }
+        }
+      },
+      "System.Reactive/6.0.0": {
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.0.1"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DynamicData/8.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zGKeUZcaW4Nxx8T2OyrkFnb+sIc6cnfCxQr/a/5Sm+Idg9rRJruHS8KFKVUIXNxDC0yQZYwO+22XBumMznA8sg==",
+      "path": "dynamicdata/8.0.2",
+      "hashPath": "dynamicdata.8.0.2.nupkg.sha512"
+    },
+    "Fody/6.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hfZ/f8Mezt8aTkgv9nsvFdYoQ809/AqwsJlOGOPYIfBcG2aAIG3v3ex9d8ZqQuFYyMoucjRg4eKy3VleeGodKQ==",
+      "path": "fody/6.8.0",
+      "hashPath": "fody.6.8.0.nupkg.sha512"
+    },
+    "ReactiveUI/19.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Ye0k68DnpS/h9BagGba2KEGsps//gcY4z7ZGr/OiWmXMJZn0z0/io4NB9tbnGFrT5sD+npo0fELJ6sambGVEFQ==",
+      "path": "reactiveui/19.5.1",
+      "hashPath": "reactiveui.19.5.1.nupkg.sha512"
+    },
+    "ReactiveUI.Fody/19.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-C5cjYVKelGPGX47T+zhykh07z9EcMhGmSYyUhEDSZ8zRBAWkon8UvSRUmyKtKnkbcaXWoszlhlfEd6CIMPRjHQ==",
+      "path": "reactiveui.fody/19.5.1",
+      "hashPath": "reactiveui.fody.19.5.1.nupkg.sha512"
+    },
+    "Splat/14.7.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nWalgf4RuopEICZhMpwlFPz0MJaBYrusIbP/GxpE6x19PZnlLW4RZs84FYxlCfXLKTMsImHKHv2YoOQmM8/bPA==",
+      "path": "splat/14.7.1",
+      "hashPath": "splat.14.7.1.nupkg.sha512"
+    },
+    "System.Reactive/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-31kfaW4ZupZzPsI5PVe77VhnvFF55qgma7KZr/E0iFTs6fmdhhG8j0mgEx620iLTey1EynOkEfnyTjtNEpJzGw==",
+      "path": "system.reactive/6.0.0",
+      "hashPath": "system.reactive.6.0.0.nupkg.sha512"
+    }
+  }
+}

@@ -7,14 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
 	<Window.Resources>
-		<CollectionViewSource x:Key="PassengerViewSource" 
+		<CollectionViewSource x:Key="PassengerViewSource"
 		                      Source="{Binding Passengers}">
 			<CollectionViewSource.GroupDescriptions>
 				<PropertyGroupDescription PropertyName="FlightNumber" />
 			</CollectionViewSource.GroupDescriptions>
 		</CollectionViewSource>
 	</Window.Resources>
-	
+
 	<Window.DataContext>
 		<vm:PassengerVM />
 	</Window.DataContext>
@@ -38,6 +38,9 @@
 		</StackPanel>
 
 		<DataGrid Grid.Row="1"
+		          Style="{DynamicResource DataGridStyle}"
+		          ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle}"
+		          RowStyle="{DynamicResource DataGridRowStyle}"
 		          ItemsSource="{Binding Source={StaticResource PassengerViewSource}}"
 		          Margin="10"
 		          AutoGenerateColumns="False"
@@ -45,29 +48,27 @@
 			<DataGrid.Columns>
 				<DataGridTextColumn Header="Фамилия"
 				                    Binding="{Binding LastName}"
-				                    MinWidth="100" />
+				                    Width="100" />
 				<DataGridTextColumn Header="Имя"
 				                    Binding="{Binding FirstName}"
-				                    MinWidth="100" />
+				                    Width="100" />
 				<DataGridTextColumn Header="Отчество"
 				                    Binding="{Binding Patronymic}"
-				                    MinWidth="100" />
+				                    Width="100" />
 				<DataGridTextColumn Header="Дата вылета"
 				                    Binding="{Binding DepartureTime}"
-				                    MinWidth="100"
-				                    Width="*" />
+				                    Width="200"/>
 				<DataGridTextColumn Header="Номер рейса"
 				                    Binding="{Binding FlightNumber}"
-				                    MinWidth="100"
-				                    Width="*" />
+				                    Width="200"/>
 			</DataGrid.Columns>
 			<DataGrid.GroupStyle>
 				<GroupStyle>
 					<GroupStyle.HeaderTemplate>
 						<DataTemplate>
 							<StackPanel>
-								<TextBlock Text="{Binding Path=FlightNumber}" 
-								           FontWeight="Bold" Padding="3"/>
+								<TextBlock Text="{Binding Path=FlightNumber}"
+								           FontWeight="Bold" Padding="3" />
 							</StackPanel>
 						</DataTemplate>
 					</GroupStyle.HeaderTemplate>
@@ -79,11 +80,11 @@
 										<Expander>
 											<Expander.Header>
 												<StackPanel Orientation="Horizontal">
-													<TextBlock Text="Рейс: "/>
+													<TextBlock Text="Рейс: " />
 													<TextBlock Text="{Binding Path=Name}" />
-													<TextBlock Text=" Содержит"/>
-													<TextBlock Text="{Binding Path=ItemCount}" Margin="8,0,4,0"/>
-													<TextBlock Text="Пассажир(ов)"/>
+													<TextBlock Text=" Содержит" />
+													<TextBlock Text="{Binding Path=ItemCount}" Margin="8,0,4,0" />
+													<TextBlock Text="пассажир(ов)" />
 												</StackPanel>
 											</Expander.Header>
 											<ItemsPresenter />
@@ -96,6 +97,6 @@
 				</GroupStyle>
 			</DataGrid.GroupStyle>
 		</DataGrid>
-		
+
 	</Grid>
 </Window>

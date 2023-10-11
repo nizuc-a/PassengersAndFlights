@@ -33,3 +33,4 @@ D:\C# projects\PassengersAndFlights\PassengersAndFlights\obj\Debug\net6.0-window
 D:\C# projects\PassengersAndFlights\PassengersAndFlights\obj\Debug\net6.0-windows\View\AddNewPassengerWindow.baml
 D:\C# projects\PassengersAndFlights\PassengersAndFlights\obj\Debug\net6.0-windows\PassengersAndFlights.csproj.Fody.CopyLocal.cache
 D:\C# projects\PassengersAndFlights\PassengersAndFlights\obj\Debug\net6.0-windows\PassengersAndFlights.csproj.Fody.RuntimeCopyLocal.cache
+D:\C# projects\PassengersAndFlights\PassengersAndFlights\obj\Debug\net6.0-windows\Model\Styles\DataGrid.baml

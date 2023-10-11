@@ -13,13 +13,19 @@
         "packagesPath": "C:\\Users\\Артем\\.nuget\\packages\\",
         "outputPath": "D:\\C# projects\\PassengersAndFlights\\PassengersAndFlights\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft Visual Studio2022\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Артем\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Артем\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0-windows"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

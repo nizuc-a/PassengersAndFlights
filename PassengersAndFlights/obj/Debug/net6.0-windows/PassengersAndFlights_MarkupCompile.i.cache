@@ -1,0 +1,20 @@
+﻿PassengersAndFlights
+1.0.0.0
+
+winexe
+C#
+.cs
+D:\C# projects\PassengersAndFlights\PassengersAndFlights\obj\Debug\net6.0-windows\
+PassengersAndFlights
+none
+false
+TRACE;DEBUG;NET;NET6_0;NETCOREAPP
+D:\C# projects\PassengersAndFlights\PassengersAndFlights\App.xaml
+5261183360
+
+11873680003
+199-761735052
+Model\Styles\Button.xaml;Model\Styles\DataGrid.xaml;Model\Styles\TextBox.xaml;View\AddNewPassengerWindow.xaml;View\MainWindow.xaml;
+
+False
+
